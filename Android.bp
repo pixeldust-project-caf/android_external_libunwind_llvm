@@ -41,6 +41,8 @@ LIBUNWIND_CPPFLAGS = [
     "-std=c++14",
     "-fexceptions",
     "-Wextra",
+    "-Wno-implicit-fallthrough",
+    // src/Unwind-EHABI.cpp line 97 and 100 have implicit fallthrough.
     "-Wno-unused-function",
     "-Wno-unused-parameter",
     "-Wno-unused-local-typedef",
