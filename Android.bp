@@ -68,7 +68,4 @@ cc_library_static {
             enabled: true,
         },
     },
-    lto: {
-        never: true,
-    }
 }
